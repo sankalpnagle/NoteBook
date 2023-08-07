@@ -4,6 +4,7 @@ const app = express();
 var cors = require('cors')
 // const PORT = 8000;
 const dotenv = require('dotenv')
+const PORT = process.env.PORT || 8000
 
 dotenv.config()
 
@@ -26,7 +27,6 @@ app.use('/api/note', noteRoutes);
 //     res.send('hellow')
 // })
 
-const PORT = process.env.PORT
 
 app.listen(PORT, () => {
     console.log(`listening on port ${PORT}`);

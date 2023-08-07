@@ -1,0 +1,50 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.back{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 657px;
+    background-color: rgba(66, 73, 59, 0.351);
+    background: url('../public/clouds-1282314_1280.jpg') no-repeat center center fixed;
+    background-size: cover;
+    opacity: 1;
+    z-index: -1;
+}
+.logincustomcard{
+    border: 2px none black;
+    width: 50%;
+    height: 50%;
+    margin: 10% auto;
+    padding: 5rem 6rem;
+    background: #70bfc917;
+    opacity: 1;
+    border-radius: 20px;
+}
+.signupcustombox{
+    border: 2px none black;
+    width: 50%;
+    height: 65%;
+    margin: 10% auto;
+    padding: 5rem 6rem;
+    background: #70bfc917;
+    /* color: white; */
+    opacity: 1;
+    border-radius: 20px;
+}
+.custombox{
+    width: 33rem;
+    box-shadow: rgb(13 70 79 / 25%) 6px 6px 6px;
+    margin-bottom: 13%;
+
+} 
+.customcard{
+    background: #70bfc917;
+    box-shadow: rgb(13 70 79 / 25%) 6px 6px 6px;
+    margin-bottom: 20px;
+
+} 

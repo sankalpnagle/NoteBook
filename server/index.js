@@ -20,15 +20,17 @@ connectToMongo();
 app.use(cors())
 app.use(express.json())
 
-app.use(express.static(path.join(__dirname, '../todo/build')))
-
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, './todo/build/index.html'))
-})
-
 //Routes
 app.use('/api/user', userRoutes);
 app.use('/api/note', noteRoutes);
+
+
+app.use(express.static(path.join(__dirname, '../todo/build')))
+
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../todo/build/index.html'))
+})
+
 
 // app.get('/', (req, res) => {
 //     res.send('hellow')
